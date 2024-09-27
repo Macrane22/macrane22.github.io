@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matthew Crane's Internet Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            background-color: white;
+            max-width: 800px;
+            width: 100%;
+            height: 100%;
+            padding: 40px;
+            box-sizing: border-box;
+            overflow-y: auto;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        .header-left {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        h1 {
+            color: #2c3e50;
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        .sub-headline {
+            color: #7f8c8d;
+            margin-top: 5px;
+            font-size: 1.1em;
+            font-weight: 400;
+        }
+        .links {
+            display: flex;
+            gap: 15px;
+            padding-top: 8px;
+        }
+        .links a {
+            color: #3498db;
+            text-decoration: none;
+            font-size: 1.5em;
+        }
+        .links a:hover {
+            color: #2980b9;
+        }
+        main {
+            flex-grow: 1;
+        }
+        h2 {
+            color: #2c3e50;
+            margin-top: 0;
+            font-weight: 600;
+        }
+        .projects, .writing {
+            margin-top: 30px;
+        }
+        .projects ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .projects li {
+            margin-bottom: 20px;
+        }
+        .projects .project-title {
+            font-weight: 600;
+            font-size: 1.1em;
+            color: #3498db;
+            text-decoration: none;
+            margin-bottom: 5px;
+            display: block;
+        }
+        .projects .project-title:hover {
+            text-decoration: underline;
+        }
+        .projects .project-description {
+            margin-top: 5px;
+            margin-left: 20px;
+            font-size: 0.9em;
+            color: #555;
+        }
+        .projects a, .writing a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .projects a:hover, .writing a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            margin-top: auto;
+            padding-top: 20px;
+            text-align: center;
+            color: #7f8c8d;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-left">
+                <h1>Matthew Crane</h1>
+                <p class="sub-headline">Data Scientist | Data Engineer</p>
+            </div>
+            <div class="links">
+                <a href="https://github.com/Macrane22" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/matthcrane/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </header>
+        
+        <main>
+            <section class="bio">
+                <h2>Hi,</h2>
+                <p>I'm a <a href='https://shopify.engineering/what-is-a-full-stack-data-scientist'>full-stack data scientist</a> with broad experience across <strong>machine learning, analytics, and ETL orchestration</strong>. Some of my particular interests within the world of data include Bayesian statistics, network analysis and cartography.
+                    
+                <p>Above all, my passion lies in contributing to data applications that 1) reduce reams of messy data into clear, well-documented forms, and 2) explicitly advance the public good. To that end, I've recently taken a sabbatical to focus on a couple of my own ideas to improve the accessibility of civic data.</p>
+                <p>I'm currently based in the San Francisco Bay Area but am open to relocating. </p>
+            </section>
+            
+            <section class="projects">
+                <h2>Projects</h2>
+                <ul>
+                    <li>
+                        <a href="#" class="project-title">Public Meeting Analyzer</a>
+                        <p class="project-description">A tool that transcribes and summarizes local government meetings, using a combination of traditional machine learning and LLM-based methods. The goal is to pull out important quotes, discussions, and pieces of legislation relevant to the public interest.</p>
+                    </li>
+                    <li>
+                        <a href="#" class="project-title">Bay Area Crime Analysis</a>
+                        <p class="project-description">A detailed breakdown of crime trends in San Francisco and the broader Bay Area, with the goal of 1) accurately extracting trends from noise in the data; and 2) forecasting future crime patterns.</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="writing">
+                <h2>Writing</h2>
+                <!-- <p>Coming soon...</p> -->
+            </section>
+        </main>
+        
+        <footer>
+            <p>&copy; 2024 Matthew Crane. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
